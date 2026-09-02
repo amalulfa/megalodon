@@ -9,9 +9,11 @@
 
 const encryptedSentences = [
     "bWVnYWxvZG9uIHNoYXJr",
-    "bWFyaWFuYSB0cmVuY2ggbXlzdGVyeQ==",
-    "ZGVlcCBzZWEgY3JlYXR1cmVz",
-    "cHJlaGlzdG9yaWMgYXBleCBwcmVkYXRvcg==",
+    "bWVnYWxvZG9uIG1hcmlhbmEgdHJlbmNo",
+    "bWVnYWxvZG9uIG15c3Rlcnk=",
     "aXMgbWVnYWxvZG9uIHN0aWxsIGFsaXZl",
-    "b2NlYW4gbXlzdGVyaWVz"
+    "Y29sb3NzYWwgbWVnYWxvZG9u",
+    "bWVnYWxvZG9uIGV2aWRlbmNl",
+    "YW5jaWVudCBtZWdhbG9kb24=",
+    "bWVnYWxvZG9uIGRlZXAgc2Vh"
 ];
