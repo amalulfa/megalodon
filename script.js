@@ -1,80 +1,30 @@
-const sentenceElement =
-    document.getElementById("sentence");
-
-const randomButton =
-    document.getElementById("randomButton");
+const sentenceElement = document.getElementById("sentence");
+const randomButton = document.getElementById("randomButton");
 
 
-/*
-    Decode Base64
-*/
+function decodeBase64(text) {
 
-function decodeSentence(encoded) {
-
-    try {
-
-        return decodeURIComponent(
-            Array.prototype.map.call(
-                atob(encoded),
-                function(char) {
-
-                    return '%'
-                        + ('00'
-                        + char.charCodeAt(0)
-                        .toString(16))
-                        .slice(-2);
-
-                }
-            ).join('')
-        );
-
-    } catch (error) {
-
-        return atob(encoded);
-
-    }
-}
-
-
-/*
-    Membuat daftar kalimat
-*/
-
-function getSentences() {
-
-    return encryptedSentences.map(
-        decodeSentence
-    );
+    return atob(text);
 
 }
 
-
-/*
-    Random sentence
-*/
 
 function randomSentence() {
 
-    const sentences =
-        getSentences();
+    const randomIndex = Math.floor(
+        Math.random() * encryptedSentences.length
+    );
 
+    const encodedSentence =
+        encryptedSentences[randomIndex];
 
-    const randomIndex =
-        Math.floor(
-            Math.random()
-            * sentences.length
-        );
-
+    const decodedSentence =
+        decodeBase64(encodedSentence);
 
     sentenceElement.textContent =
-        sentences[randomIndex];
-
+        decodedSentence;
 }
 
-
-/*
-    Button
-*/
 
 randomButton.addEventListener(
     "click",
