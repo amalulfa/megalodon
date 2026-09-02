@@ -13,5 +13,5 @@ const encryptedSentences = [
     "ZGVlcCBzZWEgY3JlYXR1cmVz",
     "cHJlaGlzdG9yaWMgYXBleCBwcmVkYXRvcg==",
     "aXMgbWVnYWxvZG9uIHN0aWxsIGFsaXZl",
-    "b2NlYW4gbXlzdGVyaWVz
+    "b2NlYW4gbXlzdGVyaWVz"
 ];
